@@ -2,169 +2,143 @@
 
 Agent Harness Studio turns one user request into an auditable, benchmarked, and ecosystem-portable agent product.
 
-## Demo Theme
+## Task
 
-Launching a regulated AI customer-support copilot with revenue pressure, auditability, and research credibility held in one operating model.
+Design a 90-day launch plan for a regulated AI customer-support copilot at a fintech, balancing growth targets, auditability, human override policy, and research credibility.
 
-## Mission Pack
+## Primary Deliverable
+
+**Executive Memo: 90-Day Launch Plan for Regulated AI Customer-Support Copilot**
+
+---
+
+### **Decision**
+Proceed with a phased 90-day launch plan for the regulated AI customer-support copilot, contingent on implementing the following controls:
+- **Pre-launch compliance audits** aligned with financial regulations.
+- **Human override protocols** with fail-safes and staff training.
+- **Rigorous experiment design** for research credibility.
+- **Portfolio optimization** to balance growth and governance.
+- **Skill dependency mapping** to mitigate integration risks.
+
+This plan balances growth targets with auditability, human oversight, and research integrity, aiming for a 20% reduction in operational costs and a 15% improvement in customer satisfaction within 90 days.
+
+---
+
+### **Control Matrix**
+| Control | Mitigated Risk | Implementation Details |
+|---------|----------------|------------------------|
+| Phased compliance audit schedule | Regulatory non-compliance | Pre-launch, mid-phase, and post-launch audits using `policy_risk_matrix` for continuous monitoring. |
+| Human override protocols with fail-safes | Inadequate human override mechanisms | Escalation paths, real-time monitoring, and staff training validated via simulations. |
+| Rigorous experiment design | Compromised research credibility | Use `code_experiment_design` for reproducible ablation studies and transparent benchmarks. |
+| Portfolio optimization for growth-governance balance | Growth target misalignment | Leverage `api_skill_portfolio_optimizer` to align milestones with risk tolerance. |
+| Skill dependency mapping and contingency planning | Integration and skill dependency failures | Use `api_skill_dependency_graph` to identify critical path dependencies and fallbacks. |
+
+---
+
+### **Residual Risk**
+- **Regulatory non-compliance**: Medium residual risk due to evolving fintech AI regulations; requires ongoing monitoring.
+- **Human override reliability**: Low residual risk if protocols are rigorously tested; potential for human error remains.
+- **Research credibility**: Low residual risk with peer-reviewable metrics; external validation gaps may persist.
+- **Growth-auditability trade-offs**: Medium residual risk if scaling pressures compromise controls.
+- **Tool dependency**: Medium residual risk if critical tools (e.g., `api_skill_portfolio_optimizer`) fail without contingencies.
+
+---
+
+### **Escalation Gates**
+1. **Day 30**: Compliance audit reveals >2 major gaps; escalate to legal and compliance teams.
+2. **Day 60**: Human override failure rate exceeds 5% in simulations; pause launch for protocol redesign.
+3. **Day 75**: Research benchmarks show <80% reproducibility; halt scaling until metrics are validated.
+4. **Any phase**: Critical tool failure (e.g., `api_skill_dependency_graph`); activate fallback plans and notify engineering leadership.
+
+---
+
+### **72h Action Plan**
+- **Hours 0–24**: Finalize and document human override protocols using `evidence_dossier_builder`.
+- **Hours 24–48**: Conduct pre-launch compliance audit with `policy_risk_matrix`; address immediate gaps.
+- **Hours 48–72**: Initiate skill dependency mapping via `api_skill_dependency_graph` and develop contingency plans.
+
+---
+
+### **Confidence**
+**Medium**. The plan is grounded in internal evidence (e.g., human override policies, audit checklists) and leverages structured risk controls. However, external validation gaps (e.g., regulatory benchmarks, third-party research reviews) and tool dependencies introduce uncertainty. Execution success hinges on adherence to escalation gates and continuous monitoring.
+
+--- 
+
+**Approval**: Recommended for execution with weekly risk reviews.  
+**Prepared by**: AI Strategy Unit  
+**Date**: [Current Date]
+
+## Task Context
+
+A fintech launch team needs a 90-day plan that can ship a customer-support copilot, keep a human override path, satisfy model-risk governance, and generate proof strong enough for procurement, compliance, and executive rollout decisions.
+
+## Evidence References
+
+- internal://fintech/human-override-policy
+- internal://fintech/audit-readiness-checklist
+- internal://cross/evidence-packet-template
+- https://owasp.org/www-project-top-10-for-large-language-model-applications/
+- https://github.com/sierra-research/tau-bench
+- https://www.nist.gov/itl/ai-risk-management-framework
+
+## Deliverable Package
 
 - Type: Strategy Mission Pack
 - Primary deliverable: Launch strategy packet with execution, evidence, and release gate.
-- Output views: proposal, execution plan, evidence packet, benchmark positioning
 - Deliverable: Decision Memo -> One-page business recommendation with tradeoffs and target wedge.
 - Deliverable: Execution Playbook -> Phased rollout with operators, checkpoints, and fallback path.
 - Deliverable: Evidence Packet -> Citations, policy references, and runtime signals behind the claim.
 - Deliverable: Interop Export -> External skill-compatible bundle for downstream ecosystems.
 
-## Proposal Headline
-
-90-Day Launch Plan for a Regulated AI Support Copilot
-
-This package turns a risky AI feature launch into a staged operating program with commercial goals, control checkpoints, and evidence for expansion.
-
-## Release Need
-
-A fintech launch team needs a 90-day plan that can ship a customer-support copilot, keep a human override path, satisfy model-risk governance, and generate proof strong enough for procurement, compliance, and executive rollout decisions.
-
-## Strategy Plan
-
-- Concentrate the launch on one revenue-linked support workflow instead of a broad AI platform story.
-- Prove operator control, auditability, and model-risk containment before scaling volume.
-- Translate pilot evidence into a release gate that commercial, risk, and research leaders can all sign.
-
-## Evidence Bundle
-
-- Release decision: go (all_quality_gates_passed)
-- Frontier score: 0.730; bottleneck axis: orchestration_quality
-- Routing confidence: 1.000
-- Value index: 86.36 (platinum)
-- Safety score: 0.72; reliability score: 1.00
-- Evidence packet: 9 records / 6 citations
-- Interop export: 2 frameworks / 36 skill entries
-- Citation: internal://fintech/human-override-policy
-- Citation: internal://fintech/audit-readiness-checklist
-- Citation: internal://cross/evidence-packet-template
-- Citation: https://owasp.org/www-project-top-10-for-large-language-model-applications/
-
-## Execution Plan
-
-- understand intent
-- collect supporting signals
-- run verification-oriented tools
-- synthesize and evaluate
-- recipe:risk-radar
-
-## Proposal Summary
-
-- Start with a narrow customer-support workflow where response time and auditability matter enough to measure.
-- Use human override, evidence logging, and gated rollout as first-class launch features rather than afterthoughts.
-- Expand only after the pilot proves containment, operator adoption, and measurable service uplift.
-- Evidence base: 9 records and 6 citations were injected into the launch packet.
-
-## Generation Mode
+## Runtime Notes
 
 - Mode: live_api
-- Live agent enabled: True
-- Live agent configured: True
 - Live agent success: True
 - Model: deepseek-chat
-
-## Launch Claim
-
-Single pipeline with runtime routing evidence, research-grade release gating, and OpenAI/Anthropic skill export compatibility.
+- Calls used: 3
 
 ## Demo Snapshot
 
-- Query: Design a 90-day launch plan for a regulated AI customer-support copilot at a fintech, balancing growth targets, auditability, human override policy, and research credibility.
 - Scenario: regulated_copilot_launch
-- Mode: deep
 - Selected agent: AnalysisAgent
-- Skills: build_timeline, risk_heatmap, synthesize_perspectives
-- Frontier score: 0.730
+- Skills: research_brief, build_timeline
+- Internal frontier estimate: 0.659
 - Bottleneck axis: orchestration_quality
 - Release decision: go (all_quality_gates_passed)
-- Robust expected utility: 0.609
-- Robust worst case: 0.324
+- Robust expected utility: 0.391
+- Robust worst case: 0.133
 - Avg uncertainty: 0.210
 - Interop frameworks: 2
-- Exported skill entries: 36
-
-## Agent Comparison
-
-- Winner: AnalysisAgent
-- Runner-up: ResearchAgent
-- Score gap: 0.0442
-
-## Generated Business Brief
-
-```text
-90-Day Launch Plan for a Regulated AI Support Copilot
-Scenario: Launching a regulated AI customer-support copilot with revenue pressure, auditability, and research credibility held in one operating model.
-Decision: go (all_quality_gates_passed)
-Request: Design a 90-day launch plan for a regulated AI customer-support copilot at a fintech, balancing growth targets, auditability, human override policy, and research credibility.
-Operating Thesis:
-- This package turns a risky AI feature launch into a staged operating program with commercial goals, control checkpoints, and evidence for expansion.
-Business Summary:
-- Start with a narrow customer-support workflow where response time and auditability matter enough to measure.
-- Use human override, evidence logging, and gated rollout as first-class launch features rather than afterthoughts.
-- Expand only after the pilot proves containment, operator adoption, and measurable service uplift.
-- Evidence base: 9 records and 6 citations were injected into the launch packet.
-Phased Rollout:
-- Phase 1 - Scope And Control Setup: Limit the first release to one support motion with stable documentation and bounded risk., Define override ownership, escalation path, and audit log schema before model exposure grows., understand intent
-- Phase 2 - Pilot And Evidence Collection: Run the copilot in shadow or assisted mode with sampled human review., Track response quality, override frequency, and policy exceptions in one operating dashboard., collect supporting signals
-- Phase 3 - Controlled Expansion: Open the copilot to more queues only after gates pass on quality, safety, and operator adoption., Separate fast rollback levers from growth levers so expansion does not compromise containment., run verification-oriented tools
-Expected Impact:
-- Pilot throughput lift: value index 86.4 and band platinum
-- Audit readiness: release decision go with reason all_quality_gates_passed
-- Operator adoption: completion score 1.00 and tool success 1.00
-- Expansion readiness: stakeholder packet ready for product, operations, and governance review
-Critical Risks:
-- 75% confidence level claimed without supporting quantitative validation
-- Vague 'evidence packet template' referenced without content specification
-- No legal counsel review mentioned in approval process
-Evidence Citations:
-- internal://fintech/human-override-policy
-- internal://fintech/audit-readiness-checklist
-- internal://cross/evidence-packet-template
-- https://owasp.org/www-project-top-10-for-large-language-model-applications/
-Execution Backbone:
-- understand intent
-- collect supporting signals
-- run verification-oriented tools
-- synthesize and evaluate
-- recipe:risk-radar
-```
+- Exported skill entries: 66
 
 ## Why This Is Different
 
-- Concentrated value axis: ecosystem_leverage=1.00, interoperability=1.00, product_readiness=0.95.
-- Frontier score=0.730 with bottleneck `orchestration_quality`.
-- Ahead of deep-research by +0.206 frontier score.
+- Concentrated value axis: ecosystem_leverage=1.00, interoperability=1.00, product_readiness=0.93.
+- Internal frontier estimate=0.659 with bottleneck `orchestration_quality`.
+- Ahead of built-in deep-research archetype by +0.135 internal frontier.
 - Method edge: robust_frontier routing optimizes expected value and downside case under uncertainty.
 - Same command emits narrative report, quantitative leaderboard, and OpenAI/Anthropic skill bundle.
 
-## Benchmark Fit
-
-- GAIA: fit=medium; strength=Good match for evidence-backed multi-step reasoning.; gap=Needs stronger open-web retrieval verification.
-- TAU-bench: fit=high; strength=Strong fit for enterprise workflow planning and tool orchestration.; gap=Needs deeper real connector coverage.
-- TheAgentCompany: fit=medium; strength=Good fit for knowledge-work packaging and operating decisions.; gap=Needs richer long-horizon workplace state.
-
-## Honest Boundary
-
-Current strength is evidence-backed planning, governance framing, and packaged delivery. It is not yet a leaderboard winner on web navigation or code-fix benchmarks because the repo still lacks full browser-actuation loops and code-task specific execution traces.
-
-## Competitive Positioning
-
-- Headline: Ahead of deep-research by +0.206 frontier score.
-- Best-vs archetype: deep-research
-- Frontier gap: +0.206
-
 ## Artifact Bundle
 
-- JSON payload: reports\gallery\live\studio_showcase_fintech-live-v5.json
-- HTML showcase: reports\gallery\live\studio_showcase_fintech-live-v5.html
-- Press brief: reports\gallery\live\studio_press_brief_fintech-live-v5.md
-- Bundle manifest: reports\gallery\live\studio_bundle_manifest_fintech-live-v5.json
-- Interop bundle index: reports\gallery\live\studio_interop_fintech-live-v5\interop_bundle.json
+- Deliverable: tmp_live_demo_refresh_round2\live\studio_deliverable_live.md
+- JSON payload: tmp_live_demo_refresh_round2\live\studio_showcase_live.json
+- HTML showcase: tmp_live_demo_refresh_round2\live\studio_showcase_live.html
+- Press brief: tmp_live_demo_refresh_round2\live\studio_press_brief_live.md
+- Bundle manifest: tmp_live_demo_refresh_round2\live\studio_bundle_manifest_live.json
+- Interop bundle index: tmp_live_demo_refresh_round2\live\studio_interop_live\interop_bundle.json
 
-_Generated at 2026-04-02T17:13:39.103475+00:00_
+## Appendix
+
+- Agent comparison winner: AnalysisAgent
+- Agent score gap: 0.0442
+- Built-in positioning: Ahead of built-in deep-research archetype by +0.135 internal frontier.
+- Fact: tool_success_rate=1.0 (measured_run_execution)
+- Fact: completion_score=1.0 (measured_run_completion)
+- Fact: evidence_records=9 (counted_evidence_bundle)
+- Fact: evidence_citations=6 (counted_citations)
+- Fact: live_agent_success=True (measured_api_run)
+- Heuristic: value_index=84.61 (internal_weighted_heuristic)
+- Heuristic: frontier_score=0.6587 (internal_bottleneck_aware_heuristic)
+- Heuristic: archetype_gap=0.1348 (built_in_archetype_comparison)
+_Generated at 2026-04-04T11:10:48.216746+00:00_
